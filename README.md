@@ -46,7 +46,7 @@ Every request must include the Authorization header. Example:
 
 ## API Endpoints
 
-# 1. Create Note
+### 1. Create Note
 POST /notes
 Headers:
 Authorization: <token>
@@ -56,17 +56,17 @@ Body (JSON):
 "content": "Secret content"
 }
 
-# 2. Get Note by ID
+### 2. Get Note by ID
 GET /notes/{id}
 Headers:
 Authorization: <token>
 
-# 3. Get All Notes
+### 3. Get All Notes
 GET /notes
 Headers:
 Authorization: <token>
 
-# 4. Update Note
+### 4. Update Note
 PUT /notes/{id}
 Headers:
 Authorization: <token>
