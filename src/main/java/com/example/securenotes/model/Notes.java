@@ -7,19 +7,11 @@ import lombok.Setter;
 import java.time.Instant;
 
 @Entity
-@Getter
-@Setter
 @Table(name= "notes")
 public class Notes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
-
-    @Column(nullable = false)
-    public String title;
-
-    @Column(nullable = false)
-    public String content;
+    private Long id;
 
     public String getContent() {
         return content;
@@ -29,9 +21,15 @@ public class Notes {
         this.content = content;
     }
 
-    public Instant createdAt;
+    @Column(nullable = false)
+    private String title;
 
-    public Instant updatedAt;
+    @Column(nullable = false)
+    private String content;
+
+    private Instant createdAt;
+
+    private Instant updatedAt;
 
     public String getTitle() {
         return title;

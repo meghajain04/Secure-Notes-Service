@@ -8,15 +8,15 @@ import java.time.Instant;
 
 
 public class NotesDto {
-    public Long id;
+    private Long id;
     @NotBlank(message = "Title cannot be empty")
     @Size(max = 100, message = "Title cannot exceed 200 characters")
-    public String title;
+    private String title;
     @NotNull(message = "Content cannot be null")
     @Size(max = 1000, message = "Content cannot exceed 1000 characters")
-    public String content;
-    public Instant createdAt;
-    public Instant updatedAt;
+    private String content;
+    private Instant createdAt;
+    private Instant updatedAt;
 
     public Long getId() {
         return id;
