@@ -76,7 +76,7 @@ Body (JSON):
 "content": "Updated content"
 }
 
-# 5. Delete Note
+### 5. Delete Note
 DELETE /notes/{id}
 Headers:
 Authorization: <token>
