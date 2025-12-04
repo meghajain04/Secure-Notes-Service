@@ -24,6 +24,7 @@ Unauthorized requests:
 Missing or incorrect token → 401 Unauthorized
 
 Setup Instructions
+
 1.Clone the repository
    git clone <repo-url>
    cd secure-notes
